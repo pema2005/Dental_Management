@@ -1,0 +1,85 @@
+.doctors {
+    padding: 100px 0;
+    background: white;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.doctor-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-10px);
+}
+
+.doctor-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-card h3 {
+    margin-bottom: 5px;
+}
+
+.doctor-card p {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.doctor-card:hover p {
+    color: white;
+}
+
+.doctor-card:hover .social-links a {
+    color: white;
+}
+.schedule {
+  background: #f0f8ff;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 3px solid #5ac8fa;
+}
+
+.schedule h4 {
+  color: #0077b6;
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.schedule ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.schedule li {
+  margin: 6px 0;
+  color: #333;
+}
+
+
+

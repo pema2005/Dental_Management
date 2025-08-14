@@ -1,0 +1,121 @@
+
+footer {
+    background-color:#333;  
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    padding: 40px 0 0;
+    margin-top: 60px;
+    border-top: 3px solid #5ac8fa;  
+  }
+  
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-content {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  
+  .footer-content h3 {
+    color: white;  
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footer-content h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: white;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  .footer-content .list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content .list li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-content .list a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .footer-content .list a:hover {
+    color: white;
+    transform: translateX(5px);
+  }
+  
+  .footer-content .fab {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: gray;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-content .fab:hover {
+    color: gray;
+    transform: translateY(-3px);
+  }
+  
+  .bottom-bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+  }
+  
+  .bottom-bar p {
+    margin: 0;
+  }
+  
+  .footer-content:nth-child(3) ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex: 100%;
+      text-align: center;
+    }
+    
+    .footer-content h3::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .footer-content .list {
+      display: inline-block;
+      text-align: left;
+    }
+    
+    .footer-content:nth-child(3) ul {
+      justify-content: center;
+    }
+  }
